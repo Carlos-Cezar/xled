@@ -6,28 +6,28 @@ const Services = () => {
   const services = [
     {
       icon: Monitor,
-      title: "Alquiler de Paneles LED",
-      description: "Paneles LED de alta resolución para todo tipo de eventos. Desde pequeñas reuniones hasta grandes espectáculos.",
-      features: ["Resolución 4K y 8K", "Tamaños personalizables", "Interior y exterior", "Entrega e instalación"]
+      title: "Aluguel de Painéis LED",
+      description: "Painéis LED de alta resolução para todo tipo de evento. Desde pequenas reuniões até grandes espetáculos.",
+      features: ["Resolução 4K e 8K", "Tamanhos personalizáveis", "Indoor e outdoor", "Entrega e instalação"]
     },
     {
       icon: Settings,
-      title: "Instalación Profesional",
-      description: "Nuestro equipo técnico especializado garantiza una instalación perfecta y segura en cualquier venue.",
-      features: ["Montaje certificado", "Estructuras seguras", "Configuración técnica", "Pruebas de calidad"]
+      title: "Instalação Profissional",
+      description: "Nossa equipe técnica especializada garante uma instalação perfeita e segura em qualquer local.",
+      features: ["Montagem certificada", "Estruturas seguras", "Configuração técnica", "Testes de qualidade"]
     },
     {
       icon: Headphones,
-      title: "Soporte 24/7",
-      description: "Asistencia técnica completa durante todo tu evento. Operadores especializados siempre disponibles.",
-      features: ["Monitoreo en vivo", "Respuesta inmediata", "Backup automático", "Mantenimiento preventivo"]
+      title: "Suporte 24/7",
+      description: "Assistência técnica completa durante todo o seu evento. Operadores especializados sempre disponíveis.",
+      features: ["Monitoramento ao vivo", "Resposta imediata", "Backup automático", "Manutenção preventiva"]
     }
   ];
 
   const features = [
-    { icon: Zap, title: "Tecnología de Vanguardia", desc: "Últimos modelos LED con la mejor calidad" },
-    { icon: Users, title: "Equipo Experto", desc: "Técnicos certificados con años de experiencia" },
-    { icon: Award, title: "Garantía Total", desc: "100% de satisfacción en cada proyecto" }
+    { icon: Zap, title: "Tecnologia de Ponta", desc: "Últimos modelos LED com a melhor qualidade" },
+    { icon: Users, title: "Equipe Especializada", desc: "Técnicos certificados com anos de experiência" },
+    { icon: Award, title: "Garantia Total", desc: "100% de satisfação em cada projeto" }
   ];
 
   return (
@@ -36,11 +36,11 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-glow-primary">Nuestros</span>{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Servicios</span>
+            <span className="text-glow-primary">Nossos</span>{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">Serviços</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ofrecemos soluciones completas en tecnología LED para eventos de cualquier escala.
+            Oferecemos soluções completas em tecnologia LED para eventos de qualquer escala.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const Services = () => {
                   ))}
                 </ul>
                 <Button variant="secondary" className="w-full glow-secondary">
-                  Más Información
+                  Mais Informações
                 </Button>
               </CardContent>
             </Card>

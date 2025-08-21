@@ -24,7 +24,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6 glow-primary">
             <Zap className="w-4 h-4 text-primary animate-led-flicker" />
-            <span className="text-sm font-medium text-primary">Tecnología LED de Última Generación</span>
+            <span className="text-sm font-medium text-primary">Tecnologia LED de Última Geração</span>
           </div>
 
           {/* Main Heading */}
@@ -32,26 +32,26 @@ const Hero = () => {
             <span className="text-glow-primary">Iluminamos</span>
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Tus Eventos
+              Seus Eventos
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Especialistas en instalación y alquiler de paneles LED para eventos. 
-            Tecnología de vanguardia que transforma espacios y crea experiencias inolvidables.
+            Especialistas em instalação e aluguel de painéis LED para eventos. 
+            Tecnologia de ponta que transforma espaços e cria experiências inesquecíveis.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="glow-primary hover-glow group">
               <Monitor className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Ver Nuestros Proyectos
+              Ver Nossos Projetos
             </Button>
             
             <Button variant="secondary" size="lg" className="glow-secondary hover-glow group">
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Conoce Nuestra Tecnología
+              Conheça Nossa Tecnologia
             </Button>
           </div>
 
@@ -63,11 +63,11 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-secondary text-glow-secondary">24/7</div>
-              <div className="text-sm text-muted-foreground">Soporte Técnico</div>
+              <div className="text-sm text-muted-foreground">Suporte Técnico</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-accent">HD 4K+</div>
-              <div className="text-sm text-muted-foreground">Resolución Premium</div>
+              <div className="text-sm text-muted-foreground">Resolução Premium</div>
             </div>
           </div>
         </div>

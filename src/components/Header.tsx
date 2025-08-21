@@ -17,15 +17,15 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="hover:text-primary transition-colors">Inicio</a>
-            <a href="#services" className="hover:text-primary transition-colors">Servicios</a>
-            <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contacto</a>
+            <a href="#home" className="hover:text-primary transition-colors">Início</a>
+            <a href="#services" className="hover:text-primary transition-colors">Serviços</a>
+            <a href="#portfolio" className="hover:text-primary transition-colors">Portfólio</a>
+            <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
           </nav>
 
           {/* CTA Button */}
           <Button variant="default" className="hidden md:flex glow-primary hover-glow">
-            Cotizar Proyecto
+            Solicitar Orçamento
           </Button>
 
           {/* Mobile Menu Button */}
@@ -43,12 +43,12 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 p-4 bg-card rounded-lg border animate-fade-in-up">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="hover:text-primary transition-colors">Inicio</a>
-              <a href="#services" className="hover:text-primary transition-colors">Servicios</a>
-              <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
-              <a href="#contact" className="hover:text-primary transition-colors">Contacto</a>
+              <a href="#home" className="hover:text-primary transition-colors">Início</a>
+              <a href="#services" className="hover:text-primary transition-colors">Serviços</a>
+              <a href="#portfolio" className="hover:text-primary transition-colors">Portfólio</a>
+              <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
               <Button variant="default" className="mt-4 glow-primary">
-                Cotizar Proyecto
+                Solicitar Orçamento
               </Button>
             </nav>
           </div>

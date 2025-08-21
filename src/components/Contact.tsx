@@ -8,27 +8,27 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Phone,
-      title: "Teléfono",
-      content: "+34 900 123 456",
-      description: "Llámanos para consultas inmediatas"
+      title: "Telefone",
+      content: "+55 11 99999-9999",
+      description: "Ligue para consultas imediatas"
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@ledevents.pro",
-      description: "Respuesta en menos de 2 horas"
+      content: "contato@ledevents.pro",
+      description: "Resposta em menos de 2 horas"
     },
     {
       icon: MapPin,
-      title: "Ubicación",
-      content: "Madrid, España",
-      description: "Servicio nacional e internacional"
+      title: "Localização",
+      content: "São Paulo, Brasil",
+      description: "Atendemos todo o Brasil"
     },
     {
       icon: Clock,
-      title: "Horario",
-      content: "24/7 Disponible",
-      description: "Soporte técnico continuo"
+      title: "Horário",
+      content: "24/7 Disponível",
+      description: "Suporte técnico contínuo"
     }
   ];
 
@@ -38,11 +38,11 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-glow-primary">Hablemos de</span>{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Tu Proyecto</span>
+            <span className="text-glow-primary">Vamos Falar do</span>{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">Seu Projeto</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            ¿Tienes un evento en mente? Nuestro equipo está listo para crear la experiencia visual perfecta.
+            Tem um evento em mente? Nossa equipe está pronta para criar a experiência visual perfeita.
           </p>
         </div>
 
@@ -51,48 +51,48 @@ const Contact = () => {
           <div className="animate-fade-in-up">
             <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl">Solicita tu Cotización</CardTitle>
+                <CardTitle className="text-2xl">Solicite seu Orçamento</CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-sm font-medium mb-2 block">Nombre *</label>
-                      <Input placeholder="Tu nombre completo" className="hover-glow" />
+                      <label className="text-sm font-medium mb-2 block">Nome *</label>
+                      <Input placeholder="Seu nome completo" className="hover-glow" />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-2 block">Email *</label>
-                      <Input type="email" placeholder="tu@email.com" className="hover-glow" />
+                      <Input type="email" placeholder="seu@email.com" className="hover-glow" />
                     </div>
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-sm font-medium mb-2 block">Teléfono</label>
-                      <Input placeholder="+34 600 000 000" className="hover-glow" />
+                      <label className="text-sm font-medium mb-2 block">Telefone</label>
+                      <Input placeholder="+55 11 99999-9999" className="hover-glow" />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-2 block">Tipo de Evento</label>
-                      <Input placeholder="Corporativo, Concierto, etc." className="hover-glow" />
+                      <Input placeholder="Corporativo, Show, Festa, etc." className="hover-glow" />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Fecha del Evento</label>
+                    <label className="text-sm font-medium mb-2 block">Data do Evento</label>
                     <Input type="date" className="hover-glow" />
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Detalles del Proyecto *</label>
+                    <label className="text-sm font-medium mb-2 block">Detalhes do Projeto *</label>
                     <Textarea 
-                      placeholder="Describe tu evento: ubicación, tamaño de audiencia, tipo de contenido, etc."
+                      placeholder="Descreva seu evento: localização, tamanho do público, tipo de conteúdo, etc."
                       rows={4}
                       className="hover-glow"
                     />
                   </div>
 
                   <Button className="w-full glow-primary hover-glow">
-                    Enviar Solicitud
+                    Enviar Solicitação
                   </Button>
                 </form>
               </CardContent>
@@ -102,9 +102,9 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
             <div>
-              <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
+              <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
               <p className="text-muted-foreground mb-8">
-                Estamos aquí para ayudarte a hacer realidad tu visión. Contacta con nosotros por cualquiera de estos medios.
+                Estamos aqui para ajudar você a realizar sua visão. Entre em contato conosco por qualquer um destes meios.
               </p>
             </div>
 
@@ -128,12 +128,12 @@ const Contact = () => {
 
             {/* CTA */}
             <div className="p-6 bg-gradient-glow rounded-lg border border-border/50">
-              <h4 className="text-xl font-bold mb-2">¿Evento Urgente?</h4>
+              <h4 className="text-xl font-bold mb-2">Evento Urgente?</h4>
               <p className="text-muted-foreground mb-4">
-                Contáctanos directamente para eventos con menos de 48 horas de aviso.
+                Entre em contato diretamente para eventos com menos de 48 horas de antecedência.
               </p>
               <Button variant="secondary" className="glow-secondary">
-                Llamar Ahora: +34 900 123 456
+                Ligar Agora: +55 11 99999-9999
               </Button>
             </div>
           </div>
