@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-led-panels.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 lg:pt-0">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -44,10 +44,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="glow-primary hover-glow group">
+            {/* <Button size="lg" className="glow-primary hover-glow group">
               <Monitor className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Ver Nossos Projetos
-            </Button>
+            </Button> */}
             
             <Button variant="secondary" size="lg" className="glow-secondary hover-glow group">
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/LOGO.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,22 +12,28 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg glow-primary animate-pulse-glow"></div>
-            <span className="text-xl font-bold text-glow-primary">LED Events Pro</span>
+            <img src={logo} alt="LED Events Pro Logo" className="h-12 object-contain" />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#home" className="hover:text-primary transition-colors">Início</a>
             <a href="#services" className="hover:text-primary transition-colors">Serviços</a>
-            <a href="#portfolio" className="hover:text-primary transition-colors">Portfólio</a>
+            {/* <a href="#portfolio" className="hover:text-primary transition-colors">Portfólio</a> */}
             <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
           </nav>
 
           {/* CTA Button */}
-          <Button variant="default" className="hidden md:flex glow-primary hover-glow">
-            Solicitar Orçamento
-          </Button>
+          <a
+            href="https://wa.me/5521964426757?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex"
+          >
+            <Button variant="default" className="glow-primary hover-glow">
+              Solicitar Orçamento
+            </Button>
+          </a>
 
           {/* Mobile Menu Button */}
           <Button
@@ -45,11 +52,17 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <a href="#home" className="hover:text-primary transition-colors">Início</a>
               <a href="#services" className="hover:text-primary transition-colors">Serviços</a>
-              <a href="#portfolio" className="hover:text-primary transition-colors">Portfólio</a>
+              {/* <a href="#portfolio" className="hover:text-primary transition-colors">Portfólio</a> */}
               <a href="#contact" className="hover:text-primary transition-colors">Contato</a>
-              <Button variant="default" className="mt-4 glow-primary">
-                Solicitar Orçamento
-              </Button>
+              <a
+                href="https://wa.me/5521964426757?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="default" className="mt-4 glow-primary w-full">
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </nav>
           </div>
         )}
