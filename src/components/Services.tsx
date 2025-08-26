@@ -66,9 +66,9 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="secondary" className="w-full glow-secondary">
+                {/* <Button variant="secondary" className="w-full glow-secondary">
                   Mais Informações
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}

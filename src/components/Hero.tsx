@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play, Zap, Monitor } from "lucide-react";
-import heroImage from "@/assets/hero-led-panels.jpg";
+import heroImage from "@/assets/heroBG.png";
+import heroMobileImage from "@/assets/heroMobile.jpg";
 
 const Hero = () => {
   return (
@@ -10,13 +11,16 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="Professional LED panel installation at event"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover hidden md:block"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
+        <img 
+          src={heroMobileImage} 
+          alt="Professional LED panel installation at event"
+          className="w-full h-full object-cover md:hidden"
+        />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 led-grid opacity-30"></div>
       </div>
-
-      {/* LED Grid Overlay */}
-      <div className="absolute inset-0 led-grid opacity-30"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
@@ -28,7 +32,7 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="text-glow-primary">Iluminamos</span>
             <br />
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -37,23 +41,12 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="hidden md:block text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed" style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}>
             Especialistas em instalação e aluguel de painéis LED para eventos. 
             Tecnologia de ponta que transforma espaços e cria experiências inesquecíveis.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            {/* <Button size="lg" className="glow-primary hover-glow group">
-              <Monitor className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Ver Nossos Projetos
-            </Button> */}
-            
-            <Button variant="secondary" size="lg" className="glow-secondary hover-glow group">
-              <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-              Conheça Nossa Tecnologia
-            </Button>
-          </div>
+          
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-16 border-t border-border/20">
@@ -69,6 +62,14 @@ const Hero = () => {
               <div className="text-3xl font-bold text-accent">HD 4K+</div>
               <div className="text-sm text-muted-foreground">Resolução Premium</div>
             </div>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <a href="#services">
+              <Button variant="secondary" size="lg" className="glow-secondary hover-glow group">
+                <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                Conheça Nossa Tecnologia
+              </Button>
+            </a>
           </div>
         </div>
       </div>
